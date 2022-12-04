@@ -1,0 +1,124 @@
+
+//////////    *MASAJES*    //////////
+ /*           vista mobile             */ 
+
+#tratamientos {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    .tratamientoslista {
+        width: 80%;
+    
+        .tratamientoslista_text {
+            -webkit-animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            margin: 10px 0px 30px 0px;
+
+            p {
+                font-family: 'Raleway';
+                font-size: 15px;
+                text-align: center;
+                font-weight: bold;
+                color: #99866a; 
+            }
+        }
+    }
+
+    .tratamientoslista_cards { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        border-radius: 10px;
+        -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        
+        h5 {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+}
+
+
+ /*           vista tablet             */ 
+
+@media (min-width: 768px){
+
+    #tratamientos {
+        margin: 20px;
+            
+        .tratamientoslista {
+
+            .tratamientoslista_text {
+                margin: 20px 0px 50px 0px;
+
+
+                p {
+                    font-size: 19px;
+                    font-style: oblique;
+                }
+            }
+
+            .tratamientoslista_cards {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                margin-bottom: 20px;
+
+                h5 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+ /*           vista desktop             */ 
+
+@media (min-width: 1200px){
+
+    #tratamientos {
+
+        .tratamientoslista {
+
+            .tratamientoslista_text {
+                padding: 50px 240px 10px 240px;
+            
+                p {
+                    font-size: 32px;
+                    color: #99866a; 
+                }
+            }
+
+            .tratamientoslista_cards{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                column-gap: 20px;
+                row-gap: 30px;
+                padding: 40px;
+
+                h5{
+                    font-size: 25px;
+                    padding-top: 10px;
+                }
+
+                p{
+                    font-size: 18px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

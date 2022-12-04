@@ -1,0 +1,213 @@
+
+//////////    GLOBALES    //////////
+ /*           vista mobile             */ 
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+
+    header {
+        display: block;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+    
+        h1 {
+            font-size: 80px;
+            color: #C8DBBE; 
+            margin-top: 20px;
+        }
+    
+        h2 {
+            font-size: 19px; 
+            color: #665A48; 
+            opacity: 70%; 
+            font-style: italic; 
+            margin-bottom: 20px;
+        }
+    
+        nav {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+
+    #footer {
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(222,242,211,1) 0%, rgba(200,219,190,1) 87.8% );
+        font-family: 'Karla', sans-serif;
+        font-weight: bold;
+        color: #91887a;
+        padding: 5px;
+
+
+        .textoredes {
+            text-align: center;
+            position: relative;
+
+            p {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+
+        .linkredes {
+            display: grid;
+            grid-template-columns: 50px 50px 50px;
+            grid-template-rows: 50px;
+            place-content: center;
+            justify-items: center;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+            }
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            
+            p {
+                font-size: 11px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+ /*           vista tablet             */ 
+
+@media (min-width: 768px){
+
+    body {
+
+        header {
+
+            h1 {
+                font-size: 110px; 
+                margin-top: 30px;
+            }
+
+            h2 {
+                font-size: 28px; 
+                margin-bottom: 30px;
+            }
+
+            nav {
+                font-size: 18px;
+            
+                
+                .container{
+                    ul li{
+                        margin-right: 15px;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+
+        #footer {
+            padding: 10px;
+            
+            .textoredes {
+                text-align: center;
+                position: relative;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .linkredes {
+                grid-template-columns: 60px 60px 60px;
+                grid-template-rows: 60px;
+    
+                img {
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+
+            .copyright {
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }  
+}
+
+
+
+ /*                VISTA DESKTOP                 */ 
+
+@media (min-width: 1200px){
+
+    body {
+
+        header {
+
+            h1 {
+                font-size: 160px;
+                margin-top: 30px;
+            }
+
+            h2 {
+                font-size: 40px; 
+                margin-bottom: 60px;
+            }
+
+            nav {
+                font-size: 27px;
+
+                .container{
+                    ul li{
+                        margin-right: 70px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        #footer {
+            padding: 20px;
+            
+            .textoredes {
+                text-align: center;
+                position: relative;
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .linkredes {
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 50px;
+                padding: 20px;
+    
+                img {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+
+            .copyright {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

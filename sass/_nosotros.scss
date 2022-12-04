@@ -1,0 +1,188 @@
+//////////    NOSOTROS   //////////
+ /*           vista mobile             */ 
+
+body {
+
+    #nosotros {
+        display: block;
+        font-family: 'Raleway';
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        font-style: oblique;
+        border-radius: 3px;
+
+        .nos-content {
+        padding-top: 30px;
+        border-radius: 5px;
+        }
+
+        .nos-foto {
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 80%;
+        -webkit-animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        .nos-texto {
+        color: #99866a; 
+        border-radius: 5px;
+        padding: 40px 30px 10px 30px;
+        -webkit-animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+    }
+
+    .perfiles {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+        font-size: 15px;
+        text-align: center;
+        font-style: oblique;
+        border-radius: 3px;
+        margin: 20px;
+	    -webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+                        
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-size: 18px;
+            font-weight: normal;
+            color: #665A48; 
+            -webkit-animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            padding-top: 20px;
+            margin: 0;
+        }
+
+        h5 {
+            font-size: 12px;
+            color: #1b1a18f6;
+            font-family: 'Raleway';
+            font-weight: bolder;
+        }
+
+        img p h5 {
+            background-color: #ede4e0;
+        }
+            
+            
+        .main-perfiles {
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px rgba(70, 62, 46, 0.507) solid;
+        }
+    }
+}
+
+
+ /*           vista tablet             */ 
+
+@media (min-width: 768px){
+
+    body {
+
+        #nosotros {
+            padding: 0;
+            margin-top: 20px;
+
+            .nos-content {
+                display: flex;      
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                padding: 0px;
+                margin: 30px;
+            }
+
+            .nos-texto {
+                font-size: 19px;
+                padding: 30px 40px 20px 30px;
+            }
+
+            .nos-foto {
+                width: 350px;
+                margin-top: 0px;
+                margin-right: 10px;
+
+                img{
+                border-radius: 5px;        
+                }
+            }
+
+        .perfiles {
+            margin: 40px;
+            p {
+                font-size: 20px;
+            }
+
+            h5 {
+                font-size: 14px;
+            }
+        }
+        
+        .main-perfiles {
+            img {
+                width: 50%;
+            }
+        }
+        }
+    }
+}
+
+ /*           vista desktop            */ 
+
+@media (min-width: 1200px){
+
+    body {
+
+        #nosotros {
+            display: block;
+
+            .nos-content {
+                margin: 40px;
+                padding: 40px 150px 20px 150px;
+            }
+
+            .nos-texto {
+                font-size: 32px;
+                margin: 100px 50px 100px 30px;
+            }
+
+            .nos-foto {
+                width: 750px;
+                margin-right: 50px;
+            }
+
+            .perfiles {
+                padding: 30px;
+                margin-bottom: 50px;
+
+                p {
+                    font-size: 29px;
+                }
+    
+                h5 {
+                    font-size: 23px;
+                }
+            }
+            
+            .main-perfiles {
+                img {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+
+
+//////////    *INDEX *    //////////
+ /*           vista mobile             */ 
+
+body {
+
+    #content {
+        display: block;
+        font-family: 'Raleway';
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        font-style: oblique;
+        border-radius: 3px;
+
+        .main-content {
+        padding-top: 30px;
+        border-radius: 5px;
+        }
+
+        .main-foto {
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 80%;
+        -webkit-animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        .main-texto {
+        color: #99866a; 
+        border-radius: 5px;
+        padding: 40px 30px 25px 30px;
+        -webkit-animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+    }
+
+    .contenedor-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 40px 0;
+        }
+
+    .videoyt {
+        width: 330px;
+        height: 170px;
+        -webkit-animation: flip-in-hor-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: flip-in-hor-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+}
+
+
+ /*           vista tablet             */ 
+
+@media (min-width: 768px){
+
+    body {
+
+        #content {
+            padding: 0;
+            margin-top: 20px;
+
+            .main-content {
+                display: flex;      
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                padding: 0;
+                margin: 30px;
+            }
+
+            .main-texto {
+                font-size: 19px;
+                padding: 40px 40px 20px 30px;
+            }
+
+            .main-foto {
+                width: 350px;
+                margin-top: 0px;
+                margin-right: 10px;
+
+                img{
+                border-radius: 5px;        
+                }
+            }
+        }
+
+        .contenedor-video {
+            margin: 20px 0 50px 0;
+            }
+
+        .videoyt {
+            width: 600px;
+            height: 300px;
+        }
+    }
+}
+
+
+
+
+ /*           vista desktop            */ 
+
+@media (min-width: 1200px){
+
+    body {
+
+        #content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .main-content {
+                margin: 40px;
+                padding: 20px 150px 20px 150px;
+            }
+
+            .main-texto {
+                font-size: 32px;
+                margin: 100px 50px 100px 30px;
+            }
+
+            .main-foto {
+                width: 750px;
+                margin-right: 50px;
+            }
+        }
+
+        .videoyt {
+            width: 1300px;
+            height: 700px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
